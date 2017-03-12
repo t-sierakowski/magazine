@@ -1,7 +1,8 @@
 /*----------FONTS----------*/
 
-@import url(https://fonts.googleapis.com/css?family=Passion+One:400);
+@import url(https://fonts.googleapis.com/css?family=Suez+One);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Ledger);
 
 /*----------RESET----------*/
 
@@ -19,24 +20,48 @@ body {
   width: 80%;
 }
 
+
+h1 {
+  font-family: 'Ledger', serif;
+  font-size: 10em;
+  letter-spacing: -3px;
+  margin: -5%;
+}
+
 /* ------- HEADER---------*/
 
 header {
   overflow: hidden;
 }
 
+header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  padding-left: 9%;
+  margin-top: -2%;
+  color: darkgray;
+  margin-bottom: -2%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 header h3 {
   font-size: 1.5em;
 }
 
-header span {
+header p {
+  font-size: 1em;
+  font-style: italic;
+  padding-left: 9%;
+}
+
+header h3 span {
   color: teal;
   font-weight: 100;
   position: relative;
   padding-left: 20px;
 }
 
-header span:before {
+header h3 span:before {
   content: "";
   width: 20px;
   height: 25px;
@@ -45,7 +70,7 @@ header span:before {
   transform: translateX(-13px) translateY(4px) rotate(15deg);
 }
 
-header span:after {
+header h3 span:after {
   content:"";
   border-top: solid 5px black;
   width: 9999px;
@@ -54,12 +79,34 @@ header span:after {
   top: 10px;
 }
 
-/*----------SECTIONS----------
+/* ------- TOP IMAGE ---------*/
 
-section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 40px;
-  padding-left: 5%;
-  color: darkgray;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}*/
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#images {
+  display: flex;
+  justify-content: space-between;
+}
+
+#images img {
+  display: block;
+}
+
+figure img {
+  margin-bottom: 20px;
+}
+
+/* ------- SIDEBAR ---------*/
+
+sidebar div {
+  display: flex;
+}
+
+sidebar div {
+  height: 400px;
+  width: 200px;
+  background-color: #DAF7A6
+}
