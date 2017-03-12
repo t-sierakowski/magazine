@@ -26,17 +26,23 @@ header {
 }
 
 header h3 {
-  font-size: 1.0em;
+  font-size: 1.5em;
 }
 
 header span {
   color: teal;
   font-weight: 100;
+  position: relative;
+  padding-left: 20px;
 }
 
 header span:before {
-  content:"/";
-  margin: 5px;
+  content: "";
+  width: 20px;
+  height: 25px;
+  border-left: solid 1px teal;
+  position: absolute;
+  transform: translateX(-13px) translateY(4px) rotate(15deg);
 }
 
 header span:after {
@@ -45,10 +51,15 @@ header span:after {
   width: 9999px;
   position: absolute;
   margin-left: 5px;
-  top: 6px;
+  top: 10px;
 }
 
-/*----------SECTION----------*/
+/*----------SECTIONS----------
+
 section h2 {
   font-family: 'Playfair Display', serif;
-}
+  font-size: 40px;
+  padding-left: 5%;
+  color: darkgray;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}*/
