@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Passion+One:400);
+
+*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
+a, em, img, strong, sub, sup,
+b, u, i, center,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, {
+	margin: 0;
+	padding: 0;
+}
+
+*/ {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px auto;
+  width: 80%;
+}
+
+header {
+  overflow: hidden;
+}
+
+header h3 {
+  font-size: 1.0em;
+}
+
+header h3 span:before {
+  content:"/";
+  margin: 5px;
+}
+
+header h3 span:after {
+  content:"";
+  border-top: solid 5px black;
+  width: 9999px;
+  position: absolute;
+  margin-left: 5px;
+  top: 6px;
+}
+
+header span {
+  color: teal;
+  font-weight: 100;
+  position: relative;
+}
