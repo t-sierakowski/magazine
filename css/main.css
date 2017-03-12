@@ -1,24 +1,25 @@
+/*----------FONTS----------*/
+
 @import url(https://fonts.googleapis.com/css?family=Passion+One:400);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+/*----------RESET----------*/
 
 */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
-a, em, img, strong, sub, sup,
-b, u, i, center,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, {
+a, article, figure, footer, header, menu, nav, {
 	margin: 0;
 	padding: 0;
 }
 
-*/ {
-  box-sizing: border-box;
-}
+/*----------BODY----------*/
 
 body {
   margin: 50px auto;
   width: 80%;
 }
+
+/* ------- HEADER---------*/
 
 header {
   overflow: hidden;
@@ -28,12 +29,17 @@ header h3 {
   font-size: 1.0em;
 }
 
-header h3 span:before {
+header span {
+  color: teal;
+  font-weight: 100;
+}
+
+header span:before {
   content:"/";
   margin: 5px;
 }
 
-header h3 span:after {
+header span:after {
   content:"";
   border-top: solid 5px black;
   width: 9999px;
@@ -42,8 +48,7 @@ header h3 span:after {
   top: 6px;
 }
 
-header span {
-  color: teal;
-  font-weight: 100;
-  position: relative;
+/*----------SECTION----------*/
+section h2 {
+  font-family: 'Playfair Display', serif;
 }
