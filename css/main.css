@@ -30,6 +30,20 @@ h1 {
   transform: translateY(-52px);
 }
 
+h4 {
+  font-size: 26px;
+}
+.number-color {
+  color: darkorange;
+}
+
+.bignumber {
+  font-family: 'Secular One', sans-serif;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+
+
 /* ------- HEADER---------*/
 
 header {
@@ -127,35 +141,30 @@ sidebar div {
   position: relative;
 }
 
-sidebar div {
-  height: 800px;
+#box {
+  height: 450px;
   width: 200px;
   background-color: #DAF7A6;
   border: solid 1px black;
   position:relative;
 }
 
-sidebar div:before {
+sidebar #box:before {
   content: "";
-  height: 800px;
-  width: 200px;
-  z-index: -1;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border: solid 5px white;
-  position:absolute;;
+  height: 430px;
+  width: 180px;
+  border: solid 10px white;
+  position: absolute;;
 }
 
-sidebar div span {
+sidebar #box span {
   height: 20px;
   width: 49px;
   background-color: teal;
   color: white;
   padding-left: 12px;
   padding-top: 5px;
-  margin: -25px 0px;
+  margin: -25px -1px;
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -165,4 +174,10 @@ sidebar img {
   width: 70%;
   margin-bottom: 80%;
   position: absolute;
+  display: block;
+}
+
+sidebar #text-position {
+  padding-top: 123%;
+  margin-left: -16px;
 }
