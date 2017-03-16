@@ -96,25 +96,25 @@ header h3 span:after {
   top: 10px;
 }
 
-/* ------- TOP IMAGE ---------*/
+/* ------- TOP IMAGES ---------*/
 
 #top {
   display: flex;
   justify-content: space-between;
+  width: 96%;
 }
 
-#images {
+#top figure {
   display: flex;
+  margin: 0;
+  flex-direction: column;
   justify-content: space-between;
-  transform: translateY(-14%);
 }
 
-/*#images img {
-  display: block;
-}*/
-
-figure img {
-  margin-bottom: 20px;
+#topimages {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
 }
 
 #issue {
