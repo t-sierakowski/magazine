@@ -41,6 +41,7 @@ h4 {
   font-family: 'Secular One', sans-serif;
   font-size: 26px;
   letter-spacing: 2px;
+  width: 50px;
 }
 
 
@@ -105,11 +106,12 @@ header h3 span:after {
 #images {
   display: flex;
   justify-content: space-between;
+  transform: translateY(-14%);
 }
 
-#images img {
+/*#images img {
   display: block;
-}
+}*/
 
 figure img {
   margin-bottom: 20px;
@@ -121,7 +123,7 @@ figure img {
   font-size: 12px;
   color: gray;
   transform: translateY(-102px);
-  padding-left: 51.5%;
+  padding-left: 47.5%;
   letter-spacing: 3px;
 }
 
@@ -154,7 +156,7 @@ sidebar #box:before {
   height: 430px;
   width: 180px;
   border: solid 10px white;
-  position: absolute;;
+  position: absolute;
 }
 
 sidebar #box span {
@@ -172,12 +174,16 @@ sidebar #box span {
 sidebar img {
   margin: 15%;
   width: 70%;
-  margin-bottom: 80%;
   position: absolute;
-  display: block;
 }
 
 sidebar #text-position {
-  padding-top: 123%;
-  margin-left: -16px;
+  padding-top: 59%;
+  margin-left: -18px;
+  align-items: center;
+  width: 0%;
+}
+
+sidebar p {
+  width: 180px;
 }
