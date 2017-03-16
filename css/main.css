@@ -201,19 +201,31 @@ sidebar img {
   margin-top: -8px;
 }
 
-/*
-sidebar #text-position {
-  padding-top: 59%;
-  margin-left: -18px;
-  align-items: center;
-  width: 0%;
+/* ------- ARTICLE COLS ---------*/
+
+[class*='col-'] {
+    float: left;
+    padding-right: 20px;
+  }
+
+[class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+
+.grid-pad {
+    padding: 20px;
+  }
+
+.col-1-4 {
+    width: 25%;
+  }
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-sidebar p {
-  width: 180px;
-  position: absolute;
-}
-
-sidebar h4 {
-  width: 50px;
+article span {
+  font-weight: bold;
 }
