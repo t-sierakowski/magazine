@@ -33,6 +33,8 @@ h1 {
 
 h2 {
   font-size: 26px;
+  font-family: 'Ledger', serif;
+  font-weight: 800;
 }
 
 p {
@@ -192,6 +194,9 @@ sidebar img {
   padding-left: 30px;
 }
 
+sidebar h2 {
+  font-size: 24px;
+}
 
 .bignumber {
   font-size: 26px;
@@ -226,6 +231,19 @@ sidebar img {
   clear: both;
 }
 
+.space {
+  margin-right: 10px;
+}
+
 article span {
   font-weight: bold;
+  display: inline-flex;
+}
+
+article p {
+  line-height: 2em;
+}
+
+#padding {
+  padding-top: 25px;
 }
