@@ -41,6 +41,7 @@ p {
   font-family: 'Assistant', sans-serif;
 }
 
+
 /* ------- FONT DETAILS ---------*/
 
 .number-color {
@@ -213,21 +214,20 @@ sidebar h2 {
 /* ------- ARTICLE COLS ---------*/
 
 [class*='col-'] {
-    float: left;
-    padding-right: 20px;
+  float: left;
   }
 
 [class*='col-']:last-of-type {
-    padding-right: 0;
-  }
-
-.grid-pad {
-    padding: 20px;
+	padding-right: 0;
   }
 
 .col-1-4 {
-    width: 25%;
+  width: 25%;
   }
+
+.row {
+	padding-right: 20px;
+}
 
 .grid:after {
   content: "";
@@ -235,17 +235,26 @@ sidebar h2 {
   clear: both;
 }
 
-.space {
-  margin-right: 10px;
+article h2 {
+	margin-bottom: 10px;
+}
+
+article h4, p {
+	margin: 0px;
 }
 
 article span {
   font-weight: bold;
-  display: inline-flex;
+	color: darkorange;
 }
 
 article p {
   line-height: 2em;
+	margin-bottom: 20px;
+}
+
+article {
+	width: 100%;
 }
 
 #padding {
