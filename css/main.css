@@ -44,13 +44,7 @@ p {
 
 /* ------- FONT DETAILS ---------*/
 
-.number-color {
-  color: darkorange;
-}
 
-.bold {
-	font-weight: bold;
-}
 
 /* ------- HEADER---------*/
 
@@ -173,6 +167,15 @@ header h3 span:after {
   width: 100px;
 }
 
+#bignumber {
+  font-size: 26px;
+  letter-spacing: 2px;
+  width: 50px;
+  padding-left: 30px;
+  margin-top: -8px;
+	color: darkorange;
+}
+
 sidebar #box:before {
   content: "";
   height: 440px;
@@ -203,15 +206,52 @@ sidebar h2 {
   font-size: 24px;
 }
 
-.bignumber {
-  font-size: 26px;
-  letter-spacing: 2px;
-  width: 50px;
-  padding-left: 30px;
-  margin-top: -8px;
+
+
+/* ------- ARTICLE REDO ---------*/
+
+.articlecontent {
+-webkit-columns: 250px 4;
+   -moz-columns: 250px 4;
+        columns: 250px 4;
+				column-fill: auto;
+				height: 630px;
 }
 
-/* ------- ARTICLE COLS ---------*/
+columns: <column-width> || <column-count>;
+
+article h2 {
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+
+article h4, p {
+	margin: 0px;
+}
+
+article span {
+  font-weight: bold;
+	color: darkorange;
+}
+
+article p {
+  line-height: 2em;
+	margin-bottom: 20px;
+}
+
+article {
+	padding-top: 25px;
+}
+
+h2:first-of-type {
+	padding-top: 0px;
+}
+
+.padding {
+  padding-top: 25px;
+}
+
+/* ------- ARTICLE COLS ---------
 
 [class*='col-'] {
   float: left;
@@ -235,28 +275,10 @@ sidebar h2 {
   clear: both;
 }
 
-article h2 {
-	margin-bottom: 10px;
-}
-
-article h4, p {
-	margin: 0px;
-}
-
-article span {
-  font-weight: bold;
-	color: darkorange;
-}
-
-article p {
-  line-height: 2em;
-	margin-bottom: 20px;
-}
-
 article {
 	width: 100%;
 }
 
-#padding {
-  padding-top: 25px;
-}
+
+
+*/
