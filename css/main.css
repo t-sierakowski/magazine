@@ -47,6 +47,10 @@ p {
   color: darkorange;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 /* ------- HEADER---------*/
 
 header {
