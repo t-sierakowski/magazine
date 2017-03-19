@@ -41,11 +41,10 @@ p {
   font-family: 'Assistant', sans-serif;
 }
 
+
 /* ------- FONT DETAILS ---------*/
 
-.number-color {
-  color: darkorange;
-}
+
 
 /* ------- HEADER---------*/
 
@@ -71,6 +70,7 @@ header p {
   font-size: 1em;
   font-style: italic;
   padding-left: 11%;
+	padding-top: 10px;
 }
 
 header h3 span {
@@ -156,7 +156,6 @@ header h3 span:after {
 #sidebarcontent {
   padding-left: 30px;
   font-size: 12px;
-  transform: translateY(-30px);
   width: 130px;
   line-height: 1.5em;
 }
@@ -166,6 +165,15 @@ header h3 span:after {
   font-weight: bolder;
   font-size: 15px;
   width: 100px;
+}
+
+#bignumber {
+  font-size: 26px;
+  letter-spacing: 2px;
+  width: 50px;
+  padding-left: 30px;
+  margin-top: -8px;
+	color: darkorange;
 }
 
 sidebar #box:before {
@@ -192,58 +200,52 @@ sidebar #box span {
 sidebar img {
   padding-top: 30px;
   padding-left: 30px;
+	margin-bottom: 10px;
 }
 
 sidebar h2 {
   font-size: 24px;
+	margin-top: -5px;
 }
 
-.bignumber {
-  font-size: 26px;
-  letter-spacing: 2px;
-  width: 50px;
-  padding-left: 30px;
-  margin-top: -8px;
+
+
+/* ------- ARTICLE REDO ---------*/
+
+.articlecontent {
+-webkit-columns: 250px 4;
+   -moz-columns: 250px 4;
+        columns: 250px 4;
+				column-gap: 26px;
+				column-fill: auto;
+				height: 650px;
 }
 
-/* ------- ARTICLE COLS ---------*/
+columns: <column-width> || <column-count>;
 
-[class*='col-'] {
-    float: left;
-    padding-right: 20px;
-  }
-
-[class*='col-']:last-of-type {
-    padding-right: 0;
-  }
-
-.grid-pad {
-    padding: 20px;
-  }
-
-.col-1-4 {
-    width: 25%;
-  }
-
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
+article h2 {
+	margin-bottom: 10px;
+	margin-top: 0px;
 }
 
-.space {
-  margin-right: 10px;
+article h4, p {
+	margin: 0px;
 }
 
 article span {
   font-weight: bold;
-  display: inline-flex;
+	color: darkorange;
 }
 
 article p {
   line-height: 2em;
+	margin-bottom: 20px;
 }
 
-#padding {
-  padding-top: 25px;
+article {
+	padding-top: 25px;
+}
+
+article h2:first-of-type {
+	padding-top: 0px;
 }
