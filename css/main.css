@@ -8,9 +8,8 @@
 
 /*----------RESET----------*/
 
-*/
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
-a, article, figure, footer, header, menu, nav, {
+a, article, figure, footer, header, menu, nav {
 	margin: 0;
 	padding: 0;
 }
@@ -56,7 +55,6 @@ header h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3em;
   padding-left: 11%;
-  margin-top: -2%;
   color: darkgray;
   margin-bottom: -2%;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -208,8 +206,6 @@ sidebar h2 {
 	margin-top: -5px;
 }
 
-
-
 /* ------- ARTICLE REDO ---------*/
 
 .articlecontent {
@@ -221,20 +217,17 @@ sidebar h2 {
 				height: 650px;
 }
 
-columns: <column-width> || <column-count>;
+.pagehead {
+	font-weight: bold;
+}
+
+.pagenumber {
+	color: darkorange;
+	font-weight: bold;
+}
 
 article h2 {
 	margin-bottom: 10px;
-	margin-top: 0px;
-}
-
-article h4, p {
-	margin: 0px;
-}
-
-article span {
-  font-weight: bold;
-	color: darkorange;
 }
 
 article p {
@@ -244,8 +237,4 @@ article p {
 
 article {
 	padding-top: 25px;
-}
-
-article h2:first-of-type {
-	padding-top: 0px;
 }
