@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(https://fonts.googleapis.com/css?family=Ledger);
 @import url(https://fonts.googleapis.com/css?family=Secular+One);
-@import url(https://fonts.googleapis.com/css?family=Assistant);
+@import url(https://fonts.googleapis.com/css?family=Assistant:400,700);
 
 /*----------RESET----------*/
 
@@ -38,6 +38,7 @@ h2 {
 
 p {
   font-family: 'Assistant', sans-serif;
+	font-weight: 400;
 }
 
 
@@ -111,6 +112,16 @@ header h3 span:after {
   justify-content: space-between;
 }
 
+figure span {
+	font-size: 50px;
+	color: white;
+	font-weight: bold;
+	margin-top: 160px;
+	margin-left: 250px;
+	position: absolute;
+	font-family: 'Assistant', sans-serif;
+}
+
 #topimages {
   display: flex;
   margin: 0;
@@ -134,6 +145,51 @@ header h3 span:after {
   border-left: solid 1px darkgray;
   position: absolute;
   transform: translateX(-33px) translateY(-16.5px) rotate(-90deg);
+}
+
+#imagehighlight {
+		position: relative;
+		font-family: 'Assistant', sans-serif;
+}
+
+#imagehighlight span {
+	font-size: 50px;
+	color: white;
+	font-weight: bold;
+	padding-left: 10px;
+	position: absolute;
+}
+
+
+#imagehighlight span:after {
+	content: "";
+	margin-top: 360px;
+	margin-left: -132px;
+	width: 130px;
+	border-top: 45px solid #61B329;
+	border-right: 16px solid transparent;
+	position: absolute;
+}
+
+#issuemonth {
+	font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-top: -87px;
+    margin-left: -18px;
+		letter-spacing: 1.5px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+#issuemonth:after {
+	content: "";
+    margin-left: -104px;
+    margin-top: 37px;
+    border-top: 44px solid gray;
+    border-left: 90px solid transparent;
+    position: absolute;
+    z-index: -1;
 }
 
 /* ------- SIDEBAR ---------*/
@@ -215,10 +271,19 @@ sidebar h2 {
 				column-gap: 26px;
 				column-fill: auto;
 				height: 650px;
+				-webkit-column-break-inside: avoid;
+  			page-break-inside: avoid;
+       	break-inside: avoid;
 }
+/*
+.column-width {
+-webkit-column-width: 200px;
+   -moz-column-width: 200px;
+        column-width: 300px;
+}*/
 
 .pagehead {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .pagenumber {
