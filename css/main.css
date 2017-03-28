@@ -297,6 +297,7 @@ sidebar h2 {
 	position: relative;
 	margin-top: 60px;
 	margin-left: 25px;
+	border: solid 18px lightgray;
 }
 
 #greencircle span {
@@ -346,4 +347,20 @@ article p {
 
 article {
 	padding-top: 25px;
+}
+
+/* ------- FOOTER ---------*/
+
+#footerhighlight {
+	color: teal;
+	text-transform: uppercase;
+}
+
+#footerhighlight:before {
+	content: ">>";
+	color: teal;
+}
+
+#line {
+	border: solid 1px black ;
 }
