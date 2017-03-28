@@ -97,7 +97,7 @@ header h3 span:after {
   top: 10px;
 }
 
-/* ------- TOP IMAGES ---------*/
+/* ------- TOP IMAGES --------- */
 
 #top {
   display: flex;
@@ -112,7 +112,7 @@ header h3 span:after {
   justify-content: space-between;
 }
 
-figure span {
+/*figure span {
 	font-size: 50px;
 	color: white;
 	font-weight: bold;
@@ -120,13 +120,15 @@ figure span {
 	margin-left: 250px;
 	position: absolute;
 	font-family: 'Assistant', sans-serif;
-}
+}*/
 
 #topimages {
   display: flex;
   margin: 0;
   justify-content: space-between;
 }
+
+/* ------- ISSUE LISTING UNDER H1 --------- */
 
 #issue {
   font-family: 'Secular One', sans-serif;
@@ -147,6 +149,8 @@ figure span {
   transform: translateX(-33px) translateY(-16.5px) rotate(-90deg);
 }
 
+/* ------- NUMBER/BANNER HIGHLIGHT OVER FLEX IMAGES --------- */
+
 #imagehighlight {
 		position: relative;
 		font-family: 'Assistant', sans-serif;
@@ -159,7 +163,6 @@ figure span {
 	padding-left: 10px;
 	position: absolute;
 }
-
 
 #imagehighlight span:after {
 	content: "";
@@ -192,7 +195,25 @@ figure span {
     z-index: -1;
 }
 
-/* ------- SIDEBAR ---------*/
+.highlight {
+	font-size: 50px;
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	font-family: 'Assistant', sans-serif;
+}
+
+.topright {
+	margin-top: 160px;
+	margin-left: 250px;
+}
+
+.bottomright {
+	margin-top: 395px;
+	margin-left: 10px;
+}
+
+/* ------- SIDEBAR TOP BOX ---------*/
 
 
 #box {
@@ -262,7 +283,30 @@ sidebar h2 {
 	margin-top: -5px;
 }
 
-/* ------- ARTICLE REDO ---------*/
+/* ------- SIDEBAR SECOND AREA ---------*/
+
+#emblem {
+	display: flex;
+}
+
+#greencircle {
+	width: 150px;
+	height: 150px;
+	background: #61B329;
+	border-radius: 150px;
+	position: relative;
+	margin-top: 60px;
+	margin-left: 25px;
+}
+
+#greencircle span {
+	position: absolute;
+	margin-left: 60px;
+	padding-top: 10px;
+	font-size: 30px;
+}
+
+/* ------- ARTICLE ---------*/
 
 .articlecontent {
 -webkit-columns: 250px 4;
@@ -275,7 +319,7 @@ sidebar h2 {
   			page-break-inside: avoid;
        	break-inside: avoid;
 }
-/*
+/* still need to adjust this!
 .column-width {
 -webkit-column-width: 200px;
    -moz-column-width: 200px;
