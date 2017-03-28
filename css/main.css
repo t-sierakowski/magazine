@@ -114,6 +114,7 @@ header h3 span:after {
 
 #topimages {
   display: flex;
+	position: relative;
   margin: 0;
   justify-content: space-between;
 }
@@ -136,6 +137,12 @@ header h3 span:after {
   position: absolute;
   transform: translateX(-33px) translateY(-16.5px) rotate(-90deg);
 }
+/*
+.number-highlight {
+	 position: absolute;
+	 font-size: 20px;*/
+
+
 
 /* ------- SIDEBAR ---------*/
 
