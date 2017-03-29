@@ -297,6 +297,7 @@ sidebar h2 {
 	position: relative;
 	margin-top: 60px;
 	margin-left: 25px;
+	border: solid 18px lightgray;
 }
 
 #greencircle span {
@@ -346,4 +347,52 @@ article p {
 
 article {
 	padding-top: 25px;
+}
+
+/* ------- FOOTER ---------*/
+
+footer {
+	display: flex;
+	margin-top: 25px;
+}
+
+/* ------- FOOTER LEFT SIDE ---------*/
+
+#footerleft {
+	width: 200%;
+}
+
+#footerhighlight {
+	color: teal;
+	text-transform: uppercase;
+}
+
+#footerhighlight:before {
+	content: ">> ";
+	color: teal;
+}
+
+#line {
+	border: solid 1px darkgray;
+	margin: 10px 10px 10px 0px;
+}
+
+/* ------- FOOTER RIGHT SIDE ---------*/
+
+#footerright {
+	display: flex;
+	transform: translateY(-116px);
+}
+
+#downloadtagline {
+	display: flex;
+	flex-direction: column;
+	font-style: italic;
+	margin: 10px;
+	color: teal;
+}
+
+#footerright span {
+	color: black;
+	font-weight: bold;
 }
