@@ -351,16 +351,48 @@ article {
 
 /* ------- FOOTER ---------*/
 
+footer {
+	display: flex;
+	margin-top: 25px;
+}
+
+/* ------- FOOTER LEFT SIDE ---------*/
+
+#footerleft {
+	width: 200%;
+}
+
 #footerhighlight {
 	color: teal;
 	text-transform: uppercase;
 }
 
 #footerhighlight:before {
-	content: ">>";
+	content: ">> ";
 	color: teal;
 }
 
 #line {
-	border: solid 1px black ;
+	border: solid 1px darkgray;
+	margin: 10px 10px 10px 0px;
+}
+
+/* ------- FOOTER RIGHT SIDE ---------*/
+
+#footerright {
+	display: flex;
+	transform: translateY(-116px);
+}
+
+#downloadtagline {
+	display: flex;
+	flex-direction: column;
+	font-style: italic;
+	margin: 10px;
+	color: teal;
+}
+
+#footerright span {
+	color: black;
+	font-weight: bold;
 }
