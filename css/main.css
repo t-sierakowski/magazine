@@ -5,6 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ledger);
 @import url(https://fonts.googleapis.com/css?family=Secular+One);
 @import url(https://fonts.googleapis.com/css?family=Assistant:400,700);
+@import url(https://fonts.googleapis.com/css?family=Vesper+Libre);
 
 /*----------RESET----------*/
 
@@ -215,6 +216,10 @@ header h3 span:after {
 
 /* ------- SIDEBAR TOP BOX ---------*/
 
+sidebar {
+	display: flex;
+	flex-direction: column;
+}
 
 #box {
   height: 460px;
@@ -286,25 +291,44 @@ sidebar h2 {
 /* ------- SIDEBAR SECOND AREA ---------*/
 
 #emblem {
-	display: flex;
+	font-family: 'Vesper Libre', serif;
+	color: white;
 }
 
 #greencircle {
+	position: relative;
 	width: 150px;
 	height: 150px;
 	background: #61B329;
 	border-radius: 150px;
-	position: relative;
 	margin-top: 60px;
 	margin-left: 25px;
-	border: solid 18px lightgray;
 }
 
-#greencircle span {
-	position: absolute;
-	margin-left: 60px;
-	padding-top: 10px;
-	font-size: 30px;
+#emblem span {
+	margin-left: 52px;
+	font-size: 40px;
+}
+
+#emblem p {
+	margin-left: 59px;
+	transform: translateY(-27px);
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.bordergradiant {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+		transform: translateY(-104px) translateX(-15px);
+    border-radius: 200px;
+    background: linear-gradient(white, lightgray, #3d3d3d);
+    background-clip: padding-box;
+    padding: 10px;
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+		z-index: -1;
 }
 
 /* ------- ARTICLE ---------*/
